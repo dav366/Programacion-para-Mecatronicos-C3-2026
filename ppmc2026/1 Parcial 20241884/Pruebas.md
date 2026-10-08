@@ -1,4 +1,4 @@
-# Definiendo las 17 casos para comprobar el buen funcionamiento del programa
+# Definiendo los 17 casos para comprobar el buen funcionamiento del programa
 ## (Mas otros dos casos propios que él ha solicitado)
 ## ¿Qué debemos comprobar?
 
