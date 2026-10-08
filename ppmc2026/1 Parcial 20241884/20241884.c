@@ -18,3 +18,14 @@
 
 /* #include <stdio.h> permite usar scanf() y printf(). */
 /* #include <stdlib.h> nos permitirá utilizar abs() para calcular diferencias absolutas. */
+
+/* Definiendo la función principal */
+int main(void) {
+
+    /* PARTE 1. DECLARACION DE VARIABLES Y ARREGLOS */
+
+    int N, M;
+    int L, U;
+    int consumo[30][30];
+
+    /* consumo[30][30] reserva espacio para una matriz de 30x30 elementos */
