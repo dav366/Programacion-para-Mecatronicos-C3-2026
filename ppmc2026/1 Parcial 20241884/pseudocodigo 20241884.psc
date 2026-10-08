@@ -96,4 +96,80 @@ Algoritmo Reto_6_PPMC_20241884
 						Si rachaActual = 0 Entonces
 							inicioActual <- j
 						FinSi
+
+						rachaActual <- rachaActual + 1
+
+						// Solo se actualiza con una racha mayor.
+						// Asi, en empate se conserva la primera.
+						Si rachaActual > rachaFila[i] Entonces
+							rachaFila[i] <- rachaActual
+							inicioRacha[i] <- inicioActual
+						FinSi
+
+					Sino
+
+						// Una posicion sin evento rompe la racha.
+						rachaActual <- 0
+
+					FinSi
+
+				FinSi
+
+			FinPara
+
+		FinPara
+
+		// Determinar si existe al menos un evento
+		hayEventos <- Falso
+
+		Para i <- 1 Hasta N Hacer
+			Si eventosFila[i] > 0 Entonces
+				hayEventos <- Verdadero
+			FinSi
+		FinPara
+
+		// Determinar fila prioritaria
+		Si hayEventos = Falso Entonces
+
+			filaPrioritaria <- 0
+
+		Sino
+
+			filaPrioritaria <- 1
+			mejorRacha <- rachaFila[1]
+			mejorImpacto <- impactoFila[1]
+			mejorEventos <- eventosFila[1]
+
+			Para i <- 2 Hasta N Hacer
+
+				Si rachaFila[i] > mejorRacha Entonces
+
+					filaPrioritaria <- i
+					mejorRacha <- rachaFila[i]
+					mejorImpacto <- impactoFila[i]
+					mejorEventos <- eventosFila[i]
+
+				Sino
+
+					Si rachaFila[i] = mejorRacha Entonces
+
+						Si impactoFila[i] > mejorImpacto Entonces
+
+							filaPrioritaria <- i
+							mejorRacha <- rachaFila[i]
+							mejorImpacto <- impactoFila[i]
+							mejorEventos <- eventosFila[i]
+
+						Sino
+
+							Si impactoFila[i] = mejorImpacto Entonces
+
+								Si eventosFila[i] > mejorEventos Entonces
+
+									filaPrioritaria <- i
+									mejorRacha <- rachaFila[i]
+									mejorImpacto <- impactoFila[i]
+									mejorEventos <- eventosFila[i]
+
+								FinSi
 FinAlgoritmo
