@@ -26,6 +26,30 @@ int main(void) {
 
     int N, M;
     int L, U;
+
+    /* N, M, L, U representan las dimensiones de la matriz de consumo */
+
     int consumo[30][30];
 
     /* consumo[30][30] reserva espacio para una matriz de 30x30 elementos */
+    
+    /* Arreglos para guardar los resultados de cada fila */
+    int eventosFila[30] = {0};
+    int impactoFila[30] = {0};
+    int rachaFila[30] = {0};
+    int inicioFila[30] = {0};
+    int eventosColumna[30] = {0};
+    int impactoColumna[30] = {0};
+    int rachaColumna[30] = {0};
+    int inicioColumna[30] = {0};
+
+    /* Variables para el procesamiento de datos */
+
+    int i, j;
+    int x, anterior, diferencia;
+    int eventos, impacto;
+    int rachaActual, rachaMaxima, inicioRacha;
+    int totalEventos = 0;
+    int filaPrioritaria = 0;
+    int columnaDestacada = 0;
+    int error = 0;
