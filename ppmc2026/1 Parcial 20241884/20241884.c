@@ -10,6 +10,8 @@
 /* Link del Video:                                            */
 /**************************************************************/
 
+/* RETO 06: Energia - mesetas de consumo alto */
+
 /* Definiendo las librerías */
 #include <stdio.h>
 #include <stdlib.h>
