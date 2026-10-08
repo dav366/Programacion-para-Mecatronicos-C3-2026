@@ -443,3 +443,61 @@ COLUMNAS 0 0 0 0 0
 PRIORIDAD 0
 COLUMNA 0
 ```
+# Definiendo los 2 casos propios para las pruebas (caso 18 y 19)
+## Caso 18: Empate en racha y eventos, pero distinto impacto
+
+**Objetivo:** comprobar que, cuando dos filas tienen la misma racha máxima y el mismo número de eventos, se selecciona la fila que tiene mayor impacto total.
+
+### Entrada (`caso_18.in`)
+
+```text
+2 6 2 10
+10 10 10 0 10 10
+12 12 12 0 12 12
+```
+
+### Salida esperada (`caso_18.out`)
+
+```text
+FILA 1 EVENTOS 3 IMPACTO 3 RACHA 2 INICIO 2
+FILA 2 EVENTOS 3 IMPACTO 9 RACHA 2 INICIO 2
+COLUMNAS 0 2 2 0 0 2
+PRIORIDAD 2
+COLUMNA 2
+```
+
+### Explicación
+
+Ambas filas tienen 3 eventos y una racha máxima de 2. Sin embargo, la fila 2 tiene un impacto total de 9, mientras que la fila 1 tiene un impacto de 3. Por esta razón, la fila prioritaria es la fila 2.
+
+Esta prueba permite verificar el criterio de desempate por impacto total.
+
+---
+
+## Caso 19: Rachas separadas con la misma longitud máxima
+
+**Objetivo:** comprobar que una columna sin evento reinicia la racha y que, si existen dos rachas máximas de igual longitud, se conserva la que comenzó primero.
+
+### Entrada (`caso_19.in`)
+
+```text
+1 8 2 10
+10 10 8 10 10 8 10 10
+```
+
+### Salida esperada (`caso_19.out`)
+
+```text
+FILA 1 EVENTOS 5 IMPACTO 5 RACHA 2 INICIO 4
+COLUMNAS 0 1 0 1 1 0 1 1
+PRIORIDAD 1
+COLUMNA 2
+```
+
+### Explicación
+
+Los eventos ocurren en las columnas 2, 4, 5, 7 y 8. Las rachas máximas tienen longitud 2: una comienza en la columna 4 y otra en la columna 7. Como ambas tienen la misma longitud, se conserva el inicio más temprano, que es la columna 4.
+
+Las columnas 3 y 6 no generan eventos y reinician las rachas. Esta prueba permite comprobar el reinicio de la racha y el criterio de desempate por inicio más temprano.
+
+---
