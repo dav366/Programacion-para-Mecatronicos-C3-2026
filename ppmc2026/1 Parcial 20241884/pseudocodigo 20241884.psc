@@ -45,5 +45,55 @@ Algoritmo Reto_6_PPMC_20241884
 	Si valido = Falso Entonces
 
 		Escribir "ERROR"
+	Sino
 
+		// Inicializar resultados
+		Para i <- 1 Hasta N Hacer
+			eventosFila[i] <- 0
+			impactoFila[i] <- 0
+			rachaFila[i] <- 0
+			inicioRacha[i] <- 0
+		FinPara
+
+		Para j <- 1 Hasta M Hacer
+			eventosColumna[j] <- 0
+		FinPara
+
+		// Analizar cada fila
+		Para i <- 1 Hasta N Hacer
+
+			rachaActual <- 0
+			inicioActual <- 0
+
+			Para j <- 1 Hasta M Hacer
+
+				evento <- 0
+				impacto <- 0
+
+				// La primera columna no puede ser evento.
+				Si j = 1 Entonces
+
+					rachaActual <- 0
+
+				Sino
+
+					x <- matriz[i,j]
+					p <- matriz[i,j-1]
+					d <- Abs(x - p)
+
+					// Regla del evento:
+					// cambio absoluto <= L y valor actual >= U
+
+					Si d <= L Y x >= U Entonces
+
+						evento <- 1
+						impacto <- x - U + 1
+
+						eventosFila[i] <- eventosFila[i] + 1
+						impactoFila[i] <- impactoFila[i] + impacto
+						eventosColumna[j] <- eventosColumna[j] + 1
+
+						Si rachaActual = 0 Entonces
+							inicioActual <- j
+						FinSi
 FinAlgoritmo
