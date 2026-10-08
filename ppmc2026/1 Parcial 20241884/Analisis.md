@@ -9,7 +9,7 @@
 
 ---
 
-## 1. Descripción del problema
+## 1. Descripción del programa
 
 El programa tiene como objetivo analizar una matriz de valores de consumo
 representados por horas.
