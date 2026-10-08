@@ -9,3 +9,9 @@
 /* Link del Video:                                        */
 /**********************************************************/
 
+/* Definiendo las librerías */
+#include <stdio.h>
+#include <stdlib.h>
+
+/* #include <stdio.h> permite usar scanf() y printf(). */
+/* #include <stdlib.h> nos permitirá utilizar abs() para calcular diferencias absolutas. */
