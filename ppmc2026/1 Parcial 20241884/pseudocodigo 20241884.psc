@@ -172,4 +172,59 @@ Algoritmo Reto_6_PPMC_20241884
 									mejorEventos <- eventosFila[i]
 
 								FinSi
+
+							FinSi
+
+						FinSi
+
+					FinSi
+
+				FinSi
+
+			FinPara
+
+		FinSi
+
+		// Determinar columna destacada
+		Si hayEventos = Falso Entonces
+
+			columnaDestacada <- 0
+
+		Sino
+
+			columnaDestacada <- 1
+
+			Para j <- 2 Hasta M Hacer
+
+				// En empate se conserva la menor columna.
+				Si eventosColumna[j] > eventosColumna[columnaDestacada] Entonces
+					columnaDestacada <- j
+				FinSi
+
+			FinPara
+
+		FinSi
+
+		// Salida por fila
+		Para i <- 1 Hasta N Hacer
+			Escribir Sin Saltar "FILA ", i
+			Escribir Sin Saltar " EVENTOS ", eventosFila[i]
+			Escribir Sin Saltar " IMPACTO ", impactoFila[i]
+			Escribir Sin Saltar " RACHA ", rachaFila[i]
+			Escribir " INICIO ", inicioRacha[i]
+		FinPara
+
+		// Salida por columna
+		Escribir Sin Saltar "COLUMNAS"
+
+		Para j <- 1 Hasta M Hacer
+			Escribir Sin Saltar " ", eventosColumna[j]
+		FinPara
+
+		Escribir ""
+
+		Escribir "PRIORIDAD ", filaPrioritaria
+		Escribir "COLUMNA ", columnaDestacada
+
+	FinSi
 FinAlgoritmo
