@@ -2,7 +2,7 @@
 
 ## Información
 
-- **Nombre:** Omar David Guzman Guerrero
+- **Nombre:** Omar David Guzmán Guerrero
 - **Matrícula:** 2024-1884
 - **Asignatura:** Programación para Mecatrónicos
 - **Profesor:** Wilkins Gabriel Cedano
