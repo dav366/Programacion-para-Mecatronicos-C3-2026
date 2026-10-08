@@ -17,4 +17,33 @@ Algoritmo Reto_6_PPMC_20241884
 	Dimension rachaFila[30]
 	Dimension inicioRacha[30]
 	Dimension eventosColumna[30]
+
+    Leer N, M, L, U
+
+	valido <- Verdadero
+
+	Si N < 1 O N > 30 O M < 1 O M > 30 O L < 0 O U < 0 O L > U O U > 1000 Entonces
+		valido <- Falso
+	FinSi
+
+	Si valido = Verdadero Entonces
+
+		Para i <- 1 Hasta N Hacer
+			Para j <- 1 Hasta M Hacer
+
+				Leer matriz[i,j]
+
+				Si matriz[i,j] < 0 O matriz[i,j] > 1000 Entonces
+					valido <- Falso
+				FinSi
+
+			FinPara
+		FinPara
+
+	FinSi
+
+	Si valido = Falso Entonces
+
+		Escribir "ERROR"
+
 FinAlgoritmo
