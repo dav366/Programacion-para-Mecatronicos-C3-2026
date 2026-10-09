@@ -27,7 +27,8 @@ int main(void) {
     int N, M;
     int L, U;
 
-    /* N, M, L, U representan las dimensiones de la matriz de consumo */
+   /* N y M representan las dimensiones de la matriz. */
+   /* L y U representan los límites para detectar eventos. */
 
     int consumo[30][30];
 
@@ -39,9 +40,6 @@ int main(void) {
     int rachaFila[30] = {0};
     int inicioFila[30] = {0};
     int eventosColumna[30] = {0};
-    int impactoColumna[30] = {0};
-    int rachaColumna[30] = {0};
-    int inicioColumna[30] = {0};
 
     /* Variables para el procesamiento de datos */
 
