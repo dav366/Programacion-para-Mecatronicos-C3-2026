@@ -107,3 +107,15 @@ int main(void) {
         rachaActual = 0;
         rachaMaxima = 0;
         inicioRacha = 0;
+
+        for (j = 0; j < M; j++) {
+
+            x = consumo[i][j];
+
+            /*
+             * La primera columna no puede generar eventos,
+             * porque no tiene un valor anterior en su fila.
+             */
+            if (j == 0) {
+                rachaActual = 0;
+            } else {
