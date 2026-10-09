@@ -119,3 +119,14 @@ int main(void) {
             if (j == 0) {
                 rachaActual = 0;
             } else {
+                    anterior = consumo[i][j - 1];
+                    diferencia = abs(x - anterior);
+
+            /* Evaluación de eventos y rachas */
+            
+            if (diferencia <= L && x >= U) {
+
+                eventos++;
+                impacto += x - U + 1;
+                eventosColumna[j]++;
+                totalEventos++;
