@@ -130,3 +130,12 @@ int main(void) {
                 impacto += x - U + 1;
                 eventosColumna[j]++;
                 totalEventos++;
+            
+            /*Calculo de rachas*/
+            
+                rachaActual++;
+
+if (rachaActual > rachaMaxima) {
+    rachaMaxima = rachaActual;
+    inicioRacha = j - rachaActual + 2;
+}
