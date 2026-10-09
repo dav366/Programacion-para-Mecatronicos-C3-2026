@@ -61,3 +61,16 @@ int main(void) {
         printf("ERROR\n");
         return 0;
     }
+
+    /* PARTE 3. VALIDACION Y LECTURA DE LA MATRIZ */
+
+    /* Validación de las dimensiones y los límites */
+
+    if (N < 1 || N > 30 ||
+        M < 1 || M > 30 ||
+        L < 0 || U > 1000 || L > U) {
+
+        printf("ERROR\n");
+        return 0;
+    }
+
