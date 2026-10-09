@@ -227,3 +227,29 @@ int main(void) {
         filaPrioritaria = 0;
         columnaDestacada = 0;
     }
+
+  /* PARTE 6. SALIDA DE RESULTADOS */
+
+    /* Resumen de cada fila, en orden. */
+
+    for (i = 0; i < N; i++) {
+
+        printf(
+            "FILA %d EVENTOS %d IMPACTO %d RACHA %d INICIO %d\n",
+            i + 1,
+            eventosFila[i],
+            impactoFila[i],
+            rachaFila[i],
+            inicioFila[i]
+        );
+    }
+
+    /* Vector de eventos por columna. */
+
+    printf("COLUMNAS");
+
+    for (j = 0; j < M; j++) {
+        printf(" %d", eventosColumna[j]);
+    }
+
+    printf("\n");
