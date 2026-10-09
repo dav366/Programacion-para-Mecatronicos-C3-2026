@@ -7,7 +7,8 @@
 /* Practica:  20241884.c (primer parcial)                                                            */
 /* Fecha de entrega:     09/10/2026                                                                  */                       
 /* Link Repositorio GitHub: https://github.com/dav366/Programacion-para-Mecatronicos-C3-2026         */
-/* Link del Video:                                                                                   */
+/* Link del Video Explicativo: https://youtu.be/ojasWKAnngM                                          */
+/* Link del Video de los 17 Casos:                                                                   */
 /*****************************************************************************************************/
 
 /* RETO 06: Energia - mesetas de consumo alto */
