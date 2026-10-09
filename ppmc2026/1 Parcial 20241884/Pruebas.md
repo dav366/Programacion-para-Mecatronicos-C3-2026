@@ -1,5 +1,5 @@
 # Definiendo los 17 casos para comprobar el buen funcionamiento del programa
-## (Mas otros dos casos propios que él ha solicitado)
+## (Mas otros dos casos propios que el maestro ha solicitado)
 ## ¿Qué debemos comprobar?
 
 - Validación de dimensiones, límites y valores de la matriz.
