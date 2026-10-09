@@ -200,3 +200,30 @@ int main(void) {
                 filaPrioritaria = filaActual;
             }
         }
+
+
+        /*
+         * Seleccionamos la columna con mas eventos.
+         * En caso de empate, se conserva la columna menor.
+         */
+        columnaDestacada = 1;
+
+        for (j = 1; j < M; j++) {
+
+            if (eventosColumna[j] >
+                eventosColumna[columnaDestacada - 1]) {
+
+                columnaDestacada = j + 1;
+            }
+        }
+
+    } else {
+
+        /*
+         * Si no hubo eventos en toda la matriz,
+         * la fila prioritaria y la columna destacada son 0.
+         */
+        
+        filaPrioritaria = 0;
+        columnaDestacada = 0;
+    }
