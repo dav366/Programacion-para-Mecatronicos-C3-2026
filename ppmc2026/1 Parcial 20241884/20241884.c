@@ -92,3 +92,8 @@ int main(void) {
             }
         }
     }
+
+    if (error == 1) {
+        printf("ERROR\n");
+        return 0;
+    }
