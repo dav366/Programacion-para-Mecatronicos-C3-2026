@@ -25,4 +25,4 @@ El proyecto analiza una matriz de valores para detectar eventos, calcular impact
 * Lenguaje C
 * Estándar C11
 * Compilador GCC
-* * PSeint
+* PSeint
