@@ -135,7 +135,29 @@ int main(void) {
             
                 rachaActual++;
 
-if (rachaActual > rachaMaxima) {
-    rachaMaxima = rachaActual;
-    inicioRacha = j - rachaActual + 2;
-}
+            if (rachaActual > rachaMaxima) {
+               rachaMaxima = rachaActual;
+               inicioRacha = j - rachaActual + 2;
+               }
+            } else {
+
+                    /*
+                     * Una posicion sin evento interrumpe
+                     * la racha consecutiva.
+                     */
+                    rachaActual = 0;
+                }
+            }
+        }
+
+        /* Guardamos el resumen de la fila. */
+        eventosFila[i] = eventos;
+        impactoFila[i] = impacto;
+        rachaFila[i] = rachaMaxima;
+
+        if (rachaMaxima == 0) {
+            inicioFila[i] = 0;
+        } else {
+            inicioFila[i] = inicioRacha;
+        }
+    }
