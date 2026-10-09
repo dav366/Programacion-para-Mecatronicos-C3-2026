@@ -161,3 +161,42 @@ int main(void) {
             inicioFila[i] = inicioRacha;
         }
     }
+
+    /* PARTE 5. FILA PRIORITARIA Y COLUMNA DESTACADA */
+
+    if (totalEventos > 0) {
+
+        /* La primera fila es la candidata inicial. */
+
+        filaPrioritaria = 1;
+
+        for (i = 1; i < N; i++) {
+
+            int filaActual = i + 1;
+            int mejorFila = filaPrioritaria - 1;
+
+            /*
+             * Criterios de prioridad:
+             * 1. Mayor racha.
+             * 2. Mayor impacto total.
+             * 3. Mayor cantidad de eventos.
+             * 4. Menor numero de fila.
+             */
+            
+            if (rachaFila[i] > rachaFila[mejorFila] ||
+
+                (rachaFila[i] == rachaFila[mejorFila] &&
+                 impactoFila[i] > impactoFila[mejorFila]) ||
+
+                (rachaFila[i] == rachaFila[mejorFila] &&
+                 impactoFila[i] == impactoFila[mejorFila] &&
+                 eventosFila[i] > eventosFila[mejorFila]) ||
+
+                (rachaFila[i] == rachaFila[mejorFila] &&
+                 impactoFila[i] == impactoFila[mejorFila] &&
+                 eventosFila[i] == eventosFila[mejorFila] &&
+                 filaActual < filaPrioritaria)) {
+
+                filaPrioritaria = filaActual;
+            }
+        }
