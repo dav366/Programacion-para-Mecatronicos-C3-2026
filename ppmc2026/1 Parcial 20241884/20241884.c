@@ -83,3 +83,12 @@ int main(void) {
                 printf("ERROR\n");
                 return 0;
             }
+
+    /* Validación de los valores de consumo */
+
+            if (consumo[i][j] < 0 ||
+                consumo[i][j] > 1000) {
+                error = 1;
+            }
+        }
+    }
