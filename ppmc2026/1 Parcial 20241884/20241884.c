@@ -1,14 +1,14 @@
-/**************************************************************/
-/*           Programación para mecatrónicos                   */
-/* Nombre:    Omar David Guzmán Guerrero                      */
-/* Matricula: 2024-1884                                       */
-/* Correo: 20241884@itla.edu.do                               */
-/* Seccion:   Sabados                                         */
-/* Practica:  20241884.c (primer parcial)                     */
-/* Fecha de entrega:     09/10/2026                           */                       
-/* Link Repositorio GitHub:                                   */
-/* Link del Video:                                            */
-/**************************************************************/
+/*****************************************************************************************************/
+/*           Programación para mecatrónicos                                                          */
+/* Nombre:    Omar David Guzmán Guerrero                                                             */
+/* Matricula: 2024-1884                                                                              */
+/* Correo: 20241884@itla.edu.do                                                                      */
+/* Seccion:   Sabados                                                                                */
+/* Practica:  20241884.c (primer parcial)                                                            */
+/* Fecha de entrega:     09/10/2026                                                                  */                       
+/* Link Repositorio GitHub: https://github.com/dav366/Programacion-para-Mecatronicos-C3-2026         */
+/* Link del Video:                                                                                   */
+/*****************************************************************************************************/
 
 /* RETO 06: Energia - mesetas de consumo alto */
 
