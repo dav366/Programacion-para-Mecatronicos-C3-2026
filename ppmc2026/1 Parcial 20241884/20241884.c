@@ -253,3 +253,11 @@ int main(void) {
     }
 
     printf("\n");
+
+  /* Fila prioritaria y columna destacada. */
+
+    printf("PRIORIDAD %d\n", filaPrioritaria);
+    printf("COLUMNA %d\n", columnaDestacada);
+
+    return 0;
+}
