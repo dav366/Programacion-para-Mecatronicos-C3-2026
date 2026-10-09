@@ -53,7 +53,8 @@ int main(void) {
     int error = 0;
 
     /* PARTE 2. LECTURA DE DIMENSIONES Y LIMITES */
-
+    printf("Defina la entrada:\n");
+    
     if (scanf("%d %d %d %d", &N, &M, &L, &U) != 4) 
     {
         printf("ERROR\n");
@@ -256,6 +257,11 @@ int main(void) {
 
     printf("PRIORIDAD %d\n", filaPrioritaria);
     printf("COLUMNA %d\n", columnaDestacada);
-
+  
+  /* PARTE 7. CIERRE DEL PROGRAMA */
+    
+    printf("\nPresiona Enter para cerrar el programa...");
+    getchar();
+    getchar();
     return 0;
 }
