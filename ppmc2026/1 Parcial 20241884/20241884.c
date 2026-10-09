@@ -53,3 +53,11 @@ int main(void) {
     int filaPrioritaria = 0;
     int columnaDestacada = 0;
     int error = 0;
+
+    /* PARTE 2. LECTURA DE DIMENSIONES Y LIMITES */
+
+    if (scanf("%d %d %d %d", &N, &M, &L, &U) != 4) 
+    {
+        printf("ERROR\n");
+        return 0;
+    }
