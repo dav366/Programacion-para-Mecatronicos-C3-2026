@@ -97,3 +97,13 @@ int main(void) {
         printf("ERROR\n");
         return 0;
     }
+
+    /* PARTE 4. PROCESAMIENTO DE CADA FILA */
+
+    for (i = 0; i < N; i++) {
+
+        eventos = 0;
+        impacto = 0;
+        rachaActual = 0;
+        rachaMaxima = 0;
+        inicioRacha = 0;
