@@ -74,3 +74,12 @@ int main(void) {
         return 0;
     }
 
+    /* Lectura de la matriz de consumo */
+
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < M; j++) {
+
+            if (scanf("%d", &consumo[i][j]) != 1) {
+                printf("ERROR\n");
+                return 0;
+            }
