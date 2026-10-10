@@ -1,0 +1,32 @@
+# Archivos ejecutables compilados
+
+*.exe
+*.out
+*.o
+*.obj
+
+# Archivos de depuración
+
+*.pdb
+*.ilk
+*.idb
+
+# Archivos temporales y copias de respaldo
+
+*.tmp
+*.temp
+*.bak
+*~
+
+# Configuración y archivos temporales de editores
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos del sistema operativo
+
+.DS_Store
+Thumbs.db
+Desktop.ini
