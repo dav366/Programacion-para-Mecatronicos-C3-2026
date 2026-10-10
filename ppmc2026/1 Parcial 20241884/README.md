@@ -19,10 +19,3 @@ El proyecto analiza una matriz de valores para detectar eventos, calcular impact
 * `Analisis.md` — Todo en lo que consiste el proyecto.
 * `pseudocodigo 20241884.psc` — Diagrama de flujo para entender la lógica interna del algoritmo del programa.
 * `Pruebas.md` — Explicación de los 19 casos de prueba bien definidos.
-
-### Tecnologías
-
-* Lenguaje C
-* Estándar C11
-* Compilador GCC
-* PSeint
